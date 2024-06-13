@@ -1,0 +1,20 @@
+{
+  "name": "rainclear-bot-node",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "main": "dist/index.js",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "discord.js-selfbot-v13": "^3.1.4",
+    "dotenv": "^16.4.5",
+    "groq-sdk": "^0.4.0"
+  },
+  "scripts": {
+    "start": "tsc && node ."
+  }
+}

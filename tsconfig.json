@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "target": "ES2022",
+      "verbatimModuleSyntax": true,
+      "allowJs": true,
+      "resolveJsonModule": true,
+      "moduleDetection": "force",
+      
+      "moduleResolution": "NodeNext",
+      "module": "NodeNext",
+      "outDir": "dist",
+      "sourceMap": true,
+
+      "lib": ["ES2022"],
+
+      // "composite": true,
+      // "declarationMap": true,
+
+      "strict": true,
+      "exactOptionalPropertyTypes": true,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitOverride": true,
+      "noImplicitReturns": true,
+      "noUncheckedIndexedAccess": true,
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/**/*.spec.ts", "node_modules"]
+}
