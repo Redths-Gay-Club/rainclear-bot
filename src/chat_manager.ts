@@ -9,7 +9,7 @@ let chats = new Map<string, Chat>();
 class Chat {
     channel: TextBasedChannel;
     history: History[];
-    lastActive = 0;
+    lastActive = Date.now();
     typing = false;
 
     constructor(channel: TextBasedChannel, history: History[]) {
@@ -140,8 +140,8 @@ function remove(channel: ThreadChannel) {
 
 async function create(message: Message) {
     const thread = await message.startThread({ name: `嗨 ${message.author.displayName} :3` });
-
-    await message.reply(greeting);
+    
+    await thread.send(greeting);
     new Chat(thread, [{
         role: "assistant",
         content: greeting
